@@ -3,11 +3,76 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta property="og:title" content="Uzair Mehmood – Data Analyst" />
-  <meta property="og:description" content="Portfolio of Uzair Mehmood, Data Analyst" />
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Uzair Mehmood – Data Scientist & AI Engineer | Python, ML, SQL Expert" />
+  <meta name="description" content="Data Scientist & AI Engineer specializing in Machine Learning, Python, SQL, and Power BI. IBM Certified professional with expertise in predictive analytics, data visualization, and AI solutions." />
+  <meta name="keywords" content="Data Scientist, AI Engineer, Machine Learning Engineer, Python Developer, SQL Expert, Power BI, Data Analytics, Artificial Intelligence, Predictive Analytics, Data Visualization" />
+  <meta name="author" content="Uzair Mehmood" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:title" content="Uzair Mehmood – Data Scientist & AI Engineer" />
+  <meta property="og:description" content="IBM Certified Data Scientist specializing in Python, Machine Learning, SQL, and Power BI. Expert in predictive analytics and AI-driven solutions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://iamuzairmehmood.github.io/" />
-  <title>Uzair Mehmood — Data Analyst</title>
+  <meta property="og:image" content="https://iamuzairmehmood.github.io/preview-image.jpg" />
+  <meta property="og:site_name" content="Uzair Mehmood Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Uzair Mehmood – Data Scientist & AI Engineer" />
+  <meta name="twitter:description" content="Data Scientist specializing in Python, Machine Learning, SQL, and Power BI. IBM Certified professional with expertise in AI and predictive analytics." />
+  <meta name="twitter:image" content="https://iamuzairmehmood.github.io/preview-image.jpg" />
+  <meta name="twitter:creator" content="@iamuzairmehmood" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://iamuzairmehmood.github.io/" />
+  
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Uzair Mehmood",
+    "jobTitle": "Data Scientist & AI Engineer",
+    "url": "https://iamuzairmehmood.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/iamuzairmehmood",
+      "https://github.com/iamuzairmehmood"
+    ],
+    "knowsAbout": [
+      "Data Science",
+      "Artificial Intelligence", 
+      "Machine Learning",
+      "Data Analytics",
+      "Python Programming",
+      "SQL Databases",
+      "Power BI",
+      "Predictive Modeling",
+      "Statistical Analysis",
+      "Data Visualization"
+    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "IBM Data Analyst Professional Certificate via Coursera",
+      "credentialCategory": "Professional Certificate",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "IBM"
+      },
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/specialization/BI23JTG5FAGH"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Bahria University"
+    },
+    "description": "Data Scientist and AI Engineer with expertise in machine learning, predictive analytics, and data-driven solutions."
+  }
+  </script>
+
+  <title>Uzair Mehmood — Data Scientist & AI Engineer | Python, ML, SQL Expert</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Spectral:wght@500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -103,17 +168,44 @@
     .badge-powerbi { background-color: #f2c811; color: #000; }
     .badge-excel { background-color: #1D6F42; color: #fff; }
     .badge-cognos { background-color: #0f62fe; color: #fff; }
+    .badge-tensorflow { background-color: #FF6F00; color: #fff; }
+    .badge-python { background-color: #3776AB; color: #fff; }
 
     /* Experience */
-    .xp-item + .xp-item{margin-top:1rem}
+    .xp-item + .xp-item{
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--card-border);
+    }
     .xp-head{display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap}
     .xp-left{min-width:0; flex:1 1 0%}
     .xp-role{font-weight:800; font-size:1.06rem}
     .xp-org{display:block; color:var(--muted); font-weight:600}
-    .xp-date{font-weight:700; color:var(--brand); white-space:nowrap; margin-left:auto; flex-shrink: 0;}
+    
+    /* Date format for Experience (same as Training) */
+    .xp-date{
+        font-weight: 700;
+        color: var(--brand);
+        white-space: nowrap;
+        margin-left: auto;
+        flex-shrink: 0;
+        font-size: 0.9rem;
+    }
 
-    /* Row style */
-    .row-item{display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; border-bottom:0px solid transparent; padding:.35rem 0}
+    /* Row style for Projects */
+    .row-item{
+      display:flex; 
+      align-items:flex-start; 
+      justify-content:space-between; 
+      gap:1rem; 
+      flex-wrap:wrap; 
+      padding: 0.75rem 0;
+    }
+    .row-item + .row-item {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--card-border);
+    }
     .row-item .left{min-width:0; flex:1 1 0%}
     .row-item .title-strong{font-weight:700}
     .row-item .meta{color:var(--muted); margin-top:.15rem}
@@ -121,7 +213,7 @@
 
     /* Projects */
     .proj h5{font-weight:800; font-size:1.02rem; margin-bottom: 0.2rem;}
-    .proj ul{margin:.45rem 0}
+    .proj ul{margin:.35rem 0}
     .proj-link { font-size: 0.85rem; text-decoration: none; margin-left: 8px; font-weight: 600; }
     .proj-link i { margin-right: 3px; }
     
@@ -149,6 +241,111 @@
     #loader .spinner-border{width:3rem;height:3rem}
 
     section{scroll-margin-top:100px}
+    
+    /* Education single line style */
+    .edu-single-line { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+        padding: 0.75rem;
+    }
+    .edu-single-line .degree { 
+        font-weight: 800; 
+        font-size: 1.06rem; 
+        color: var(--fg);
+    }
+    .edu-single-line .university { 
+        color: var(--muted); 
+        font-weight: 600; 
+        margin-left: 8px; 
+    }
+    .edu-single-line .university::before { 
+        content: "-"; 
+        margin-right: 8px; 
+    }
+    
+    /* Certification premium style - with verify credentials text */
+    .cert-premium {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.85rem 1rem;
+        background: linear-gradient(135deg, rgba(13, 110, 253, 0.05) 0%, rgba(78, 161, 255, 0.02) 100%);
+        border-radius: 10px;
+        border-left: 3px solid var(--brand);
+        transition: all 0.3s ease;
+    }
+    .cert-premium:hover {
+        transform: translateY(-1px);
+        background: linear-gradient(135deg, rgba(13, 110, 253, 0.08) 0%, rgba(78, 161, 255, 0.04) 100%);
+    }
+    .cert-info { 
+        display: flex; 
+        align-items: center; 
+        gap: 0.9rem; 
+        flex: 1; 
+    }
+    .cert-icon { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--brand) 0%, #4facfe 100%);
+        color: white;
+        font-size: 1rem;
+    }
+    .cert-details { flex: 1; }
+    .cert-name { 
+        font-weight: 800; 
+        font-size: 1.06rem;
+        margin-bottom: 0.15rem;
+        color: var(--fg);
+    }
+    .cert-issuer { 
+        color: var(--muted); 
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    /* Verify credentials button with text */
+    .verify-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0.9rem;
+        border-radius: 8px;
+        background: transparent;
+        color: var(--brand);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+        border: 1px solid var(--brand);
+    }
+    .verify-btn:hover {
+        background: var(--brand);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px var(--glow);
+    }
+    .verify-btn i { font-size: 0.85rem; }
+    
+    @media (max-width: 768px) {
+        .cert-premium {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.8rem;
+        }
+        .cert-info { width: 100%; }
+        .verify-btn { align-self: flex-end; margin-top: -0.5rem; }
+        .xp-date {
+            font-size: 0.85rem;
+            margin-left: 0;
+            margin-top: 0.25rem;
+        }
+    }
   </style>
 </head>
 <body class="dark-mode"> <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><i id="themeIcon" class="fa-solid fa-sun"></i></button> <div class="container py-4">
@@ -158,7 +355,7 @@
         &nbsp;
         <span class="initial">M</span><span class="rest">EHMOOD</span>
       </h1>
-      <p class="title text-uppercase">Data Analyst</p> <nav class="contact mt-3" aria-label="contact links">
+      <p class="title text-uppercase">Data Scientist</p> <nav class="contact mt-3" aria-label="contact links">
         <a class="chip" target="_blank" href="https://www.linkedin.com/in/iamuzairmehmood"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         <a class="chip" target="_blank" href="https://wa.me/+923110240059"><i class="fa-solid fa-phone"></i> +92 311-0240059</a>
         <a class="chip" href="mailto:ch_uzairmehmood@outlook.com"><i class="fa-solid fa-envelope"></i> Email</a>
@@ -170,20 +367,21 @@
     <div class="page-nav-wrap">
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
       <nav class="page-nav" role="navigation" aria-label="Page sections">
-        <a href="#objective" class="nav-link">Objective</a>
+        <a href="#career-summary" class="nav-link">Career Summary</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#experience" class="nav-link">Experience</a>
         <a href="#projects" class="nav-link">Projects</a>
-        <a href="#education" class="nav-link">Education</a>
+        <a href="#training" class="nav-link">Training</a>
         <a href="#certification" class="nav-link">Certification</a>
+        <a href="#education" class="nav-link">Education</a>
       </nav>
     </div>
 
-    <section id="objective" class="reveal">
-      <h3 class="section-title">Objective</h3>
+    <section id="career-summary" class="reveal">
+      <h3 class="section-title">Career Summary</h3>
       <div class="card">
-        <p>IBM Certified Data Analyst with hands-on experience in Python (Pandas, NumPy, Matplotlib), SQL, Advanced Excel, and Power BI, including expertise in data scraping/web scraping, data cleaning, data transformation, and exploratory data analysis (EDA). Proficient in statistical analysis, data visualization, and business intelligence reporting to deliver actionable insights, support data-driven decision-making, and enhance organizational performance.</p>
-        <p class="mb-0"><strong>Interests:</strong> Data Engineering, Data Analysis and Data Science.</p>
+        <p>IBM Certified Data Scientist with hands-on experience in Python (Pandas, NumPy, Matplotlib), SQL, Excel, and Power BI, with expertise in data preprocessing, cleaning, transformation, and exploratory data analysis (EDA). Skilled in building predictive models, performing statistical analysis, and creating interactive dashboards to deliver actionable insights. Experienced in web scraping, data visualization, and business intelligence reporting to support data-driven decision-making.</p>
+        <p class="mb-0"><strong>Interests:</strong> Data Engineering, Data Analysis, Data Science and Artificial Intelligence.</p>
       </div>
     </section>
 
@@ -192,7 +390,7 @@
       <div class="card">
         <ul class="mb-0 skills">
           <li><strong>Languages:</strong> Python | SQL</li>
-          <li><strong>Libraries:</strong> Beautiful Soup | Selenium | Pandas | Numpy | Matplotlib | Plotly</li>
+          <li><strong>Libraries:</strong> Pandas | Numpy | Matplotlib | Plotly | Beautiful Soup | Selenium | Playwright</li>
           <li><strong>Tools:</strong> Excel | Power BI | Jupyter Notebook | VS Code | IBM Cognos | Microsoft SQL Server | Git</li>
         </ul>
       </div>
@@ -205,13 +403,13 @@
             <div class="xp-head">
               <div class="xp-left">
                 <div class="xp-role">Junior Data Scraper</div>
-                <div class="xp-org">Mesh Square</div>
+                <div class="xp-org">Mesh Sq</div>
               </div>
               <div class="xp-date">Dec 2025 - Present</div>
             </div>
             <ul>
-              <li>Automating web scraping with Python, Selenium, and Beautiful Soup to collect and structure high-quality lead data from multiple online sources.</li>
-              <li>Cleaning, validating, and organizing scraped contact and company information to support accurate and targeted lead generation for the sales team.</li>
+              <li>Automated lead generation through web scraping, data extraction, and structured data processing.</li>
+              <li><strong>Tech Stack:</strong> Python | Playwright | Selenium | Beautiful Soup</li>
             </ul>
           </div>
 
@@ -219,7 +417,7 @@
             <div class="xp-head">
               <div class="xp-left">
                 <div class="xp-role">Assistant System Engineer</div>
-                <div class="xp-org">Al Mustafa Trust</div>
+                <div class="xp-org">AI Mustafa Trust</div>
               </div>
               <div class="xp-date">Aug 2025 - Dec 2025</div>
             </div>
@@ -235,7 +433,7 @@
       <h3 class="section-title">Projects</h3>
       <div class="card proj">
         
-        <div class="row-item mb-3">
+        <div class="row-item">
             <div class="left">
                 <div class="d-flex align-items-center flex-wrap">
                     <h5 class="mb-0">Credit Card Fraud Risk Analysis</h5>
@@ -249,7 +447,6 @@
                     <li><strong>Tech Stack:</strong> Power BI, DAX, Slicers, KPIs and Interactive Visuals.</li>
                 </ul>
             </div>
-            <div class="date-right"></div>
         </div>
 
         <div class="row-item">
@@ -262,7 +459,7 @@
                     <span class="badge badge-excel">Microsoft Excel</span>
                 </div>
                 <ul>
-                    <li>Created an interactive dashboard to analyze, KPI's, sales pattern and customer behavior for clearer business insights.</li>
+                    <li>Created an interactive dashboard to analyze KPI's, sales pattern and customer behavior for clearer business insights.</li>
                     <li><strong>Tech Stack:</strong> MS Excel, Power Query, Power Pivot, DAX Measures, Data Modeling, Pivot Table, Pivot Chart, Slicers.</li>
                 </ul>
             </div>
@@ -271,45 +468,69 @@
       </div>
     </section>
 
-    <section id="education" class="reveal">
-      <h3 class="section-title">Education</h3>
+    <section id="training" class="reveal">
+      <h3 class="section-title">Training</h3>
       <div class="card">
         <div class="xp-item">
-            <div class="xp-head">
-                <div class="xp-left">
-                    <div class="xp-role">Bachelor of Software Engineering</div>
-                    <div class="xp-org">Bahria University</div>
-                </div>
-                <div class="xp-date">2023</div>
+          <div class="xp-head">
+            <div class="xp-left">
+              <div class="xp-role">Artificial Intelligence</div>
+              <div class="xp-org">Samsung Innovation Campus 2026</div>
             </div>
-            <ul>
-                <li>Relevant Coursework: Object Oriented Programing (OOP), Database Management Systems (DBMS), Data Mining.</li>
-            </ul>
+            <div class="xp-date">Jan 2026 - Present</div>
+          </div>
+          <ul>
+            <li>Mastered Python (NumPy, Pandas), Linear Algebra, and Statistics to perform data preprocessing, exploratory data analysis, and visualization.</li>
+            <li>Developing Supervised, Unsupervised, and Deep Learning models using TensorFlow and Keras for real-world problem solving.</li>
+          </ul>
+        </div>
+
+        <div class="xp-item">
+          <div class="xp-head">
+            <div class="xp-left">
+              <div class="xp-role">Data Analyst Trainee (IBM-Aligned Curriculum)</div>
+              <div class="xp-org">EXD - Blended International IT Training Program</div>
+            </div>
+            <div class="xp-date">Sep 2025 - Nov 2025</div>
+          </div>
+          <ul>
+            <li>Trained in SQL, Python, Excel and Power BI to build code data analysis and reporting skills.</li>
+            <li>Gained hands-on experience in data cleaning, visualization and analytical problem-solving.</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section id="certification" class="reveal">
-        <h3 class="section-title">Certification</h3>
-        <div class="card">
-          <div class="xp-item">
-            <div class="xp-head">
-              <div class="xp-left">
-                <div class="d-flex align-items-center flex-wrap">
-                    <div class="xp-role">IBM Data Analyst Certification</div>
-                    <a href="https://www.coursera.org/account/accomplishments/specialization/BI23JTG5FAGH" target="_blank" class="proj-link"><i class="fa-solid fa-certificate"></i> Credential</a>
-                </div>
-                <div class="xp-org">Blended International IT Training Program | NAVTTC-EXD</div>
-              </div>
-              <div class="xp-date">Sep 2025 - Dec 2025</div>
+      <h3 class="section-title">Certification</h3>
+      <div class="card">
+        <div class="cert-premium">
+          <div class="cert-info">
+            <div class="cert-icon">
+              <i class="fa-solid fa-certificate"></i>
             </div>
-            <ul>
-              <li>Trained in SQL, Python, Excel and Power BI to build code data analysis and reporting skills.</li>
-              <li>Gaining hands-on experience in data cleaning, visualization and analytical problem-solving.</li>
-            </ul>
+            <div class="cert-details">
+              <div class="cert-name">IBM Data Analyst Professional Certificate via Coursera</div>
+              <div class="cert-issuer">IBM</div>
+            </div>
           </div>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/BI23JTG5FAGH" target="_blank" class="verify-btn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Credentials
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section id="education" class="reveal">
+      <h3 class="section-title">Education</h3>
+      <div class="card">
+        <div class="edu-single-line">
+          <div class="degree">Bachelor of Software Engineering</div>
+          <div class="university">Bahria University</div>
+          <div class="xp-date">Graduated 2023</div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <p class="mb-0">© 2025 Uzair Mehmood. All rights reserved. Designed with <span class="heart">❤</span></p>
@@ -355,7 +576,7 @@
       window.scrollTo({top:0});
       const navLinks = document.querySelectorAll('.page-nav a');
       navLinks.forEach(a => a.classList.remove('active'));
-      const obj = document.querySelector('.page-nav a[href="#objective"]');
+      const obj = document.querySelector('.page-nav a[href="#career-summary"]');
       if(obj) obj.classList.add('active');
     });
 
@@ -381,16 +602,32 @@
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.page-nav a');
     const nav = document.querySelector('.page-nav');
-    const observerOptions = { root: null, rootMargin: '0px 0px -50% 0px', threshold: 0 };
+    
+    // Improved section observer
+    const observerOptions = { 
+      root: null, 
+      rootMargin: '0px 0px -70% 0px',
+      threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1] 
+    };
+    
     const sectionObserver = new IntersectionObserver((entries) => {
+        let maxVisibleSection = null;
+        let maxRatio = 0;
+        
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                navLinks.forEach(link => link.classList.remove('active'));
-                const link = document.querySelector(`.page-nav a[href="#${entry.target.id}"]`);
-                if (link) link.classList.add('active');
+            if (entry.intersectionRatio > maxRatio) {
+                maxRatio = entry.intersectionRatio;
+                maxVisibleSection = entry.target.id;
             }
         });
+        
+        if (maxVisibleSection && maxRatio > 0.3) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            const link = document.querySelector(`.page-nav a[href="#${maxVisibleSection}"]`);
+            if (link) link.classList.add('active');
+        }
     }, observerOptions);
+    
     sections.forEach(s => sectionObserver.observe(s));
 
     // Nav Styles
@@ -417,6 +654,28 @@
       loader.style.display = 'flex';
       setTimeout(()=>{ loader.style.display = 'none'; window.open(downloadLink, '_blank'); }, 1000);
     });
+    
+    // Improved scroll tracking
+    let lastScrollTop = 0;
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+      } else {
+        // Scrolling up - more precise section detection
+        const currentSection = Array.from(sections).find(section => {
+          const rect = section.getBoundingClientRect();
+          return rect.top <= 120 && rect.bottom >= 120;
+        });
+        
+        if (currentSection) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          const link = document.querySelector(`.page-nav a[href="#${currentSection.id}"]`);
+          if (link) link.classList.add('active');
+        }
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, false);
   </script>
 </body>
 </html>
