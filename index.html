@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Uzair Mehmood — IT Support & Systems Engineer</title>
-  
+  <meta name="google-site-verification" content="ZJ_8A6uw1XGzSm6jfyN_ltCDeKmG_LpTi4QS83R178M" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -100,7 +100,7 @@
       pointer-events: none; 
     }
 
-    .container { max-width: 860px; position: relative; z-index: 2; padding-bottom: 4rem; }
+    .container { width: 92%; max-width: 860px; margin: 0 auto; position: relative; z-index: 2; padding-bottom: 4rem; }
 
     .site-header { padding: 4rem 0 1.5rem; text-align: center; position: relative; }
     
@@ -121,6 +121,8 @@
     
     .page-nav { 
       display: flex; 
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 0.25rem; 
       background: rgba(13, 18, 30, 0.4); 
       backdrop-filter: blur(20px); 
@@ -214,11 +216,6 @@
       opacity: 0.5;
     }
 
-    @media (max-width: 680px) {
-      .skill-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 1rem 0; }
-      .skill-cat { width: 100%; }
-    }
-
     .xp-item { position: relative; padding-left: 1.75rem; margin-bottom: 2rem; border-left: 2px solid var(--card-border); transition: border-color 0.4s ease; }
     .xp-item:last-child { margin-bottom: 0; }
     .xp-item::before { 
@@ -241,7 +238,7 @@
     .tech-stack span { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 6px; background: rgba(59, 130, 246, 0.08); color: var(--brand-accent); border: 1px solid rgba(59, 130, 246, 0.15); transition: all 0.3s var(--smooth); }
     .tech-stack span:hover { background: rgba(59, 130, 246, 0.15); transform: translateY(-1px); }
 
-    .cert-box { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .cert-box { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
     .cert-left { display: flex; align-items: center; gap: 1rem; }
     .cert-icon { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(37, 99, 235, 0.2)); color: var(--brand-accent); font-size: 1.2rem; flex-shrink: 0; border: 1px solid rgba(56, 189, 248, 0.2); transition: all 0.4s ease; }
 
@@ -251,6 +248,27 @@
     .theme-toggle:hover { transform: scale(1.1) rotate(10deg); border-color: var(--brand-accent); color: var(--brand-accent); box-shadow: 0 8px 24px var(--glow); }
     
     section { scroll-margin-top: 100px; }
+
+    @media (max-width: 768px) {
+      .name { font-size: 2.2rem; }
+      .title { font-size: 0.9rem; }
+      .site-header { padding: 3rem 0 1.5rem; }
+      .card { padding: 1.5rem 1.25rem; }
+      .page-nav { border-radius: 24px; padding: 0.5rem; }
+      .page-nav a { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+    }
+
+    @media (max-width: 680px) {
+      .skill-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 1rem 0; }
+      .skill-cat { width: 100%; }
+    }
+
+    @media (max-width: 480px) {
+      .name { font-size: 1.8rem; }
+      .xp-head { flex-direction: column; gap: 0.25rem; align-items: flex-start; }
+      .xp-date { align-self: flex-start; }
+      .cert-box { flex-direction: column; align-items: flex-start; }
+    }
 
     @media print {
       #spiderWeb, .theme-toggle, .page-nav-wrap, footer, .hero-glow { display: none !important; }
@@ -279,7 +297,6 @@
         <a class="chip" target="_blank" href="https://wa.me/+923110240059"><i class="fa-solid fa-phone"></i> +92 311-0240059</a>
         <a class="chip" href="mailto:ch_uzairmehmood@outlook.com"><i class="fa-solid fa-envelope"></i> Email</a>
         <a class="chip" target="_blank" href="https://github.com/iamuzairmehmood"><i class="fa-brands fa-github"></i> GitHub</a>
-        <a class="chip" target="_blank" href="https://iamuzairmehmood.github.io/"><i class="fa-solid fa-globe"></i> Website</a>
         <button class="chip download" onclick="window.print()"><i class="fa-solid fa-file-arrow-down"></i> Resume PDF</button>
       </nav>
     </header>
