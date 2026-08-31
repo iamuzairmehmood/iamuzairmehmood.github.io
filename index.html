@@ -2,683 +2,577 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uzair Mehmood — IT Support & Systems Engineer</title>
   
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Uzair Mehmood – Data Engineering & Data Scientist | Python, ML, SQL Expert" />
-  <meta name="description" content="Data Engineering & Data Scientist specializing in Machine Learning, Python, SQL, and Power BI. IBM Certified professional with expertise in predictive analytics, data visualization, and AI solutions." />
-  <meta name="keywords" content="Data Scientist, AI Engineer, Data Engineer, Machine Learning Engineer, Python Developer, SQL Expert, Power BI, Data Analytics, Artificial Intelligence, Predictive Analytics, Data Visualization" />
-  <meta name="author" content="Uzair Mehmood" />
-  <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="a_MhSusFncTjvUQwawRy5csHL-Z7JTs8S5EwlOo3q2U" />
-  
-  <!-- Open Graph / LinkedIn -->
-  <meta property="og:title" content="Uzair Mehmood – Data Engineering & Data Scientist" />
-  <meta property="og:description" content="IBM Certified Data Scientist specializing in Python, Machine Learning, SQL, and Power BI. Expert in predictive analytics and AI-driven solutions." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://iamuzairmehmood.github.io/" />
-  <meta property="og:image" content="https://iamuzairmehmood.github.io/preview-image.jpg" />
-  <meta property="og:site_name" content="Uzair Mehmood Portfolio" />
-  <meta property="og:locale" content="en_US" />
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Uzair Mehmood – Data Engineering & Data Scientist" />
-  <meta name="twitter:description" content="Data Scientist specializing in Python, Machine Learning, SQL, and Power BI. IBM Certified professional with expertise in AI and predictive analytics." />
-  <meta name="twitter:image" content="https://iamuzairmehmood.github.io/preview-image.jpg" />
-  <meta name="twitter:creator" content="@iamuzairmehmood" />
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://iamuzairmehmood.github.io/" />
-  
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Uzair Mehmood",
-    "jobTitle": "Data Engineering & Data Scientist",
-    "url": "https://iamuzairmehmood.github.io/",
-    "sameAs": [
-      "https://www.linkedin.com/in/iamuzairmehmood",
-      "https://github.com/iamuzairmehmood"
-    ],
-    "knowsAbout": [
-      "Data Science",
-      "Artificial Intelligence", 
-      "Machine Learning",
-      "Data Analytics",
-      "Python Programming",
-      "SQL Databases",
-      "Power BI",
-      "Predictive Modeling",
-      "Statistical Analysis",
-      "Data Visualization"
-    ],
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "name": "IBM Data Analyst Professional Certificate via Coursera",
-      "credentialCategory": "Professional Certificate",
-      "recognizedBy": {
-        "@type": "Organization",
-        "name": "IBM"
-      },
-      "credentialUrl": "https://www.coursera.org/account/accomplishments/specialization/BI23JTG5FAGH"
-    },
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Bahria University"
-    },
-    "description": "Data Engineering and Data Scientist with expertise in machine learning, predictive analytics, and data-driven solutions."
-  }
-  </script>
-
-  <title>Uzair Mehmood — Data Scientist | Python, ML, SQL Expert</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Spectral:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <style>
-    :root{
-      --bg:#f8f9fa; --fg:#0b0d12; --muted:#6c757d; --brand:#0d6efd; --card:#ffffff; --card-border:#e9ecef; --glow: rgba(13,110,253,.22);
-      
-      /* LIGHT MODE: Needs a DARK gradient to pop against white */
-      /* Deep Navy -> Vibrant Royal Blue */
-      --name-grad: linear-gradient(135deg, #021B79 0%, #0575E6 100%);
+    :root {
+      --bg: #050810; 
+      --fg: #f8fafc; 
+      --muted: #94a3b8; 
+      --brand: #3b82f6; 
+      --brand-accent: #38bdf8;
+      --card: rgba(13, 18, 30, 0.65); 
+      --card-border: rgba(255, 255, 255, 0.08); 
+      --card-hover-border: rgba(56, 189, 248, 0.4);
+      --glow: rgba(56, 189, 248, 0.25);
+      --spotlight: rgba(255, 255, 255, 0.03);
+      --web-rgb: 56, 189, 248;
+      --skill-bg: rgba(255, 255, 255, 0.03);
+      --skill-border: rgba(255, 255, 255, 0.08);
+      --timeline-dot: #38bdf8;
+      --smooth: cubic-bezier(0.16, 1, 0.3, 1);
     }
     
-    body.dark-mode{ 
-      --bg:#0e1116; --fg:#ffffff; --muted:#c7d0da; --brand:#4ea1ff; --card:#12151a; --card-border:#22262b; --glow: rgba(78,161,255,.32); 
-      
-      /* DARK MODE: Needs a LIGHT gradient to pop against black */
-      /* Icy Cyan -> Neon Sky Blue */
-      --name-grad: linear-gradient(135deg, #8AF2FF 0%, #4facfe 100%);
+    body.light-mode { 
+      --bg: #f4f7fb; 
+      --fg: #0f172a; 
+      --muted: #475569; 
+      --brand: #2563eb; 
+      --brand-accent: #1d4ed8;
+      --card: rgba(255, 255, 255, 0.7); 
+      --card-border: rgba(0, 0, 0, 0.08); 
+      --card-hover-border: rgba(37, 99, 235, 0.3);
+      --glow: rgba(37, 99, 235, 0.15);
+      --spotlight: rgba(37, 99, 235, 0.04);
+      --web-rgb: 37, 99, 235;
+      --skill-bg: rgba(0, 0, 0, 0.03);
+      --skill-border: rgba(0, 0, 0, 0.08);
+      --timeline-dot: #2563eb;
     }
 
-    html{scroll-behavior:smooth}
-    body{font-family:'Nunito',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--fg); margin:0; line-height:1.65}
-
-    /* Gradient Mixin Logic for Classes */
-    .name, .section-title {
-        background: var(--name-grad);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent; /* Fallback */
-        display: inline-block; /* Ensures gradient only covers text width */
+    html { scroll-behavior: smooth; }
+    
+    body { 
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif; 
+      background: var(--bg); 
+      color: var(--fg); 
+      margin: 0; 
+      line-height: 1.6; 
+      transition: background 0.6s var(--smooth), color 0.6s var(--smooth); 
+      position: relative;
+      font-size: 0.95rem;
+      overflow-x: hidden;
     }
 
-    /* Header */
-    .site-header{padding:2.2rem 0 1rem; text-align:center}
-    .name{
-        font-family:'Spectral',serif; font-weight:500; text-transform:uppercase; margin:0; line-height:1;
-        /* Slight drop shadow to make text sharper */
-        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); 
-    }
-    .name .initial{display:inline-block; font-size:calc(2.6rem + 1.2vw); margin-right:.15rem}
-    .name .rest{font-size:calc(1.6rem + 1.2vw); letter-spacing:.08em}
-    .title{font-weight:700; color:var(--brand) !important; margin:.35rem 0 0}
-
-    /* Page nav (sticky) */
-    .page-nav-wrap{position:sticky; top:0; z-index:1050}
-    .page-nav{display:flex; justify-content:center; gap:.25rem; background:transparent; padding:.45rem; transition:background .25s ease, box-shadow .25s ease, backdrop-filter .25s ease}
-    .page-nav.scrolled{backdrop-filter: blur(10px); box-shadow:0 6px 18px rgba(0,0,0,.08)}
-    body.dark-mode .page-nav.scrolled{background:rgba(12,14,18,.6)}
-    body:not(.dark-mode) .page-nav.scrolled{background:rgba(255,255,255,.72)}
-    .page-nav a{display:inline-block; padding:.45rem .85rem; margin:.08rem .2rem; border-radius:999px; text-decoration:none; color:var(--muted); font-weight:700; transition:.18s}
-    .page-nav a.active{background:var(--brand); color:#fff; box-shadow:0 8px 20px var(--glow)}
-
-    /* Hamburger for small screens */
-    .nav-toggle{display:none; position:fixed; left:12px; top:12px; z-index:1201; border:none; background:transparent; font-size:1.25rem; cursor:pointer; color:var(--fg)}
-    @media (max-width:768px){
-      .page-nav{display:none; flex-direction:column; align-items:center; padding:8px 6px; max-height:0; overflow:hidden; transition:max-height .28s ease}
-      .page-nav.open{display:flex; max-height:420px}
-      .nav-toggle{display:block}
-      .page-nav a{padding:.6rem .9rem; margin:.22rem 0; width:92%; text-align:center}
-    }
-
-    /* Contact */
-    .contact{display:flex; justify-content:center; flex-wrap:wrap; gap:.6rem; margin-top:1rem}
-    .chip{display:inline-flex; align-items:center; gap:.55rem; padding:.45rem .8rem; border:1px solid var(--card-border); border-radius:999px; background:var(--card); color:var(--fg); text-decoration:none; transition:transform .18s ease, box-shadow .18s ease, background .18s ease}
-    .chip i{width:16px; text-align:center}
-    .chip:hover{transform:translateY(-3px); box-shadow:0 10px 28px var(--glow)}
-    .chip.download{background:var(--brand); color:#fff; border:0}
-    .chip.download:hover{filter:brightness(.95)}
-
-    /* Sections & cards */
-    .container{max-width:980px}
-    .section-title{
-        font-weight:900; 
-        font-size:1.28rem; 
-        letter-spacing:.06em; 
-        text-transform:uppercase; 
-        margin:1.8rem 0 1rem;
-        /* Gradient applied via shared class above */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(25px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
     
-    .card{border-radius:12px; background:var(--card); border:1px solid var(--card-border); box-shadow:0 8px 30px rgba(0,0,0,.06); transition:transform .2s ease,box-shadow .2s ease; padding:1rem}
-    .card:hover{transform:translateY(-4px); box-shadow:0 18px 42px var(--glow)}
-
-    /* Colors */
-    .card, .card p, .card li, .chip, .xp-role, .xp-org, footer{color:var(--fg)}
-    .card a{color:var(--brand)}
-    .site-header .title{color:var(--brand) !important}
-
-    /* Custom Badges */
-    .badge-powerbi { background-color: #f2c811; color: #000; }
-    .badge-excel { background-color: #1D6F42; color: #fff; }
-    .badge-cognos { background-color: #0f62fe; color: #fff; }
-    .badge-tensorflow { background-color: #FF6F00; color: #fff; }
-    .badge-python { background-color: #3776AB; color: #fff; }
-
-    /* Experience */
-    .xp-item + .xp-item{
-      margin-top: 0.75rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid var(--card-border);
-    }
-    .xp-head{display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap}
-    .xp-left{min-width:0; flex:1 1 0%}
-    .xp-role{font-weight:800; font-size:1.06rem}
-    .xp-org{display:block; color:var(--muted); font-weight:600}
-    
-    /* Date format for Experience (same as Training) */
-    .xp-date{
-        font-weight: 700;
-        color: var(--brand);
-        white-space: nowrap;
-        margin-left: auto;
-        flex-shrink: 0;
-        font-size: 0.9rem;
-    }
-
-    /* Row style for Projects */
-    .row-item{
-      display:flex; 
-      align-items:flex-start; 
-      justify-content:space-between; 
-      gap:1rem; 
-      flex-wrap:wrap; 
-      padding: 0.75rem 0;
-    }
-    .row-item + .row-item {
-      margin-top: 0.75rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid var(--card-border);
-    }
-    .row-item .left{min-width:0; flex:1 1 0%}
-    .row-item .title-strong{font-weight:700}
-    .row-item .meta{color:var(--muted); margin-top:.15rem}
-    .row-item .date-right{font-weight:700; color:var(--brand); white-space:nowrap; flex-shrink: 0;}
-
-    /* Projects */
-    .proj h5{font-weight:800; font-size:1.02rem; margin-bottom: 0.2rem;}
-    .proj ul{margin:.35rem 0}
-    .proj-link { font-size: 0.85rem; text-decoration: none; margin-left: 8px; font-weight: 600; }
-    .proj-link i { margin-right: 3px; }
-    
-    /* Skills */
-    .skills li{margin-bottom:.45rem}
-
-    /* Footer */
-    footer{text-align:center; margin:2rem 0 1rem; color:var(--muted)}
-    .heart{color:#ff2b4a; font-size:0.78rem}
-
-    /* Utils */
-    .theme-toggle{position:fixed; top:10px; right:12px; z-index:1202; width:46px; height:46px; border-radius:50%; border:1px solid var(--card-border); background:var(--card); color:var(--fg); display:flex; align-items:center; justify-content:center; cursor:pointer}
-    .scroll-up{
-        position:fixed; bottom:1.6rem; right:1.6rem; z-index:1100; width:46px; height:46px;
-        border:none; border-radius:50%; background:var(--brand); color:#fff; display:none;
-        align-items:center; justify-content:center; box-shadow: 0 4px 12px rgba(0,0,0,.2);
-        transition: background .2s ease, box-shadow .2s ease;
-    }
-    body.dark-mode .scroll-up { background:var(--brand); box-shadow: 0 4px 12px rgba(255,255,255,.12); }
-    .scroll-up:hover { opacity: 0.9; box-shadow: 0 6px 16px rgba(0,0,0,.3); }
-
-    /* Loader */
-    #loader{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.5);z-index:2000}
-    #loader .card{min-width:260px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem}
-    #loader .spinner-border{width:3rem;height:3rem}
-
-    section{scroll-margin-top:100px}
-    
-    /* Education single line style */
-    .edu-single-line { 
-        display: flex; 
-        align-items: center; 
-        justify-content: space-between; 
-        flex-wrap: wrap; 
-        padding: 0.75rem;
-    }
-    .edu-single-line .degree { 
-        font-weight: 800; 
-        font-size: 1.06rem; 
-        color: var(--fg);
-    }
-    .edu-single-line .university { 
-        color: var(--muted); 
-        font-weight: 600; 
-        margin-left: 8px; 
-    }
-    .edu-single-line .university::before { 
-        content: "-"; 
-        margin-right: 8px; 
+    .animate-up {
+      opacity: 0;
+      animation: fadeInUp 0.8s var(--smooth) forwards;
+      will-change: transform, opacity;
     }
     
-    /* Certification premium style - with verify credentials text */
-    .cert-premium {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.85rem 1rem;
-        background: linear-gradient(135deg, rgba(13, 110, 253, 0.05) 0%, rgba(78, 161, 255, 0.02) 100%);
-        border-radius: 10px;
-        border-left: 3px solid var(--brand);
-        transition: all 0.3s ease;
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+
+    .hero-glow {
+      position: absolute;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(var(--web-rgb), 0.15) 0%, rgba(0,0,0,0) 70%);
+      z-index: 0;
+      pointer-events: none;
+      transition: background 0.6s var(--smooth);
     }
-    .cert-premium:hover {
-        transform: translateY(-1px);
-        background: linear-gradient(135deg, rgba(13, 110, 253, 0.08) 0%, rgba(78, 161, 255, 0.04) 100%);
+
+    #spiderWeb { 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100vw; 
+      height: 100vh; 
+      z-index: 1; 
+      pointer-events: none; 
     }
-    .cert-info { 
-        display: flex; 
-        align-items: center; 
-        gap: 0.9rem; 
-        flex: 1; 
-    }
-    .cert-icon { 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 42px;
-        height: 42px;
-        border-radius: 8px;
-        background: linear-gradient(135deg, var(--brand) 0%, #4facfe 100%);
-        color: white;
-        font-size: 1rem;
-    }
-    .cert-details { flex: 1; }
-    .cert-name { 
-        font-weight: 800; 
-        font-size: 1.06rem;
-        margin-bottom: 0.15rem;
-        color: var(--fg);
-    }
-    .cert-issuer { 
-        color: var(--muted); 
-        font-weight: 600;
-        font-size: 0.9rem;
-    }
-    /* Verify credentials button with text */
-    .verify-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 0.9rem;
-        border-radius: 8px;
-        background: transparent;
-        color: var(--brand);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 0.85rem;
-        transition: all 0.3s ease;
-        border: 1px solid var(--brand);
-    }
-    .verify-btn:hover {
-        background: var(--brand);
-        color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px var(--glow);
-    }
-    .verify-btn i { font-size: 0.85rem; }
+
+    .container { max-width: 860px; position: relative; z-index: 2; padding-bottom: 4rem; }
+
+    .site-header { padding: 4rem 0 1.5rem; text-align: center; position: relative; }
     
-    @media (max-width: 768px) {
-        .cert-premium {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.8rem;
-        }
-        .cert-info { width: 100%; }
-        .verify-btn { align-self: flex-end; margin-top: -0.5rem; }
-        .xp-date {
-            font-size: 0.85rem;
-            margin-left: 0;
-            margin-top: 0.25rem;
-        }
+    .name { 
+      font-weight: 800; 
+      letter-spacing: -0.04em; 
+      font-size: 2.8rem; 
+      margin: 0; 
+      background: linear-gradient(135deg, var(--fg) 20%, var(--brand-accent) 100%); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+    }
+    
+    .title { font-weight: 600; color: var(--brand-accent); font-size: 1rem; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 0.5rem; }
+
+    .page-nav-wrap { position: sticky; top: 1rem; z-index: 1050; display: flex; justify-content: center; margin: 1.5rem 0 2.5rem; }
+    
+    .page-nav { 
+      display: flex; 
+      gap: 0.25rem; 
+      background: rgba(13, 18, 30, 0.4); 
+      backdrop-filter: blur(20px); 
+      -webkit-backdrop-filter: blur(20px); 
+      padding: 0.35rem; 
+      border-radius: 999px; 
+      border: 1px solid var(--card-border); 
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      transition: background 0.5s ease, border-color 0.5s ease;
+    }
+    
+    body.light-mode .page-nav { background: rgba(255, 255, 255, 0.6); }
+    
+    .page-nav a { padding: 0.4rem 1.2rem; border-radius: 999px; text-decoration: none; color: var(--muted); font-weight: 600; font-size: 0.85rem; transition: all 0.4s var(--smooth); }
+    .page-nav a:hover { color: var(--fg); background: rgba(255, 255, 255, 0.05); }
+    .page-nav a.active { background: var(--brand); color: #fff; box-shadow: 0 4px 15px var(--glow); }
+
+    .card { 
+      position: relative; 
+      border-radius: 16px; 
+      background: var(--card); 
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border); 
+      box-shadow: 0 4px 24px rgba(0,0,0,0.05); 
+      transition: transform 0.5s var(--smooth), border-color 0.5s var(--smooth), box-shadow 0.5s var(--smooth), background 0.6s var(--smooth); 
+      padding: 1.75rem 2rem; 
+      overflow: hidden;
+      will-change: transform;
+    }
+    
+    .card::before { 
+      content: ""; position: absolute; inset: 0; 
+      background: radial-gradient(500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--spotlight), transparent 40%); 
+      opacity: 0; transition: opacity 0.5s var(--smooth); pointer-events: none; z-index: 0;
+    }
+    
+    .card:hover { border-color: var(--card-hover-border); box-shadow: 0 16px 48px var(--glow); transform: translateY(-4px); }
+    .card:hover::before { opacity: 1; }
+    .card > * { position: relative; z-index: 1; }
+
+    .contact { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem; }
+    
+    .chip { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.45rem 1rem; border: 1px solid var(--card-border); border-radius: 999px; background: var(--card); backdrop-filter: blur(8px); color: var(--fg); text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: all 0.4s var(--smooth); will-change: transform; }
+    .chip:hover { border-color: var(--brand-accent); color: var(--brand-accent); transform: translateY(-2px); box-shadow: 0 8px 20px var(--glow); }
+    .chip.download { background: var(--brand); color: #fff; border: none; }
+    .chip.download:hover { background: var(--brand-accent); color: #fff; }
+
+    .section-title { font-weight: 800; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--brand-accent); margin: 2rem 0 1rem; display: flex; align-items: center; gap: 0.75rem; transition: color 0.4s ease; }
+    .section-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--card-border), transparent); transition: background 0.4s ease; }
+
+    .skills-horizontal { display: flex; flex-direction: column; gap: 0.5rem; }
+    .skill-row { 
+      display: flex; 
+      align-items: center; 
+      gap: 1.5rem; 
+      padding: 1rem 0; 
+      border-bottom: 1px solid var(--card-border);
+      transition: all 0.4s var(--smooth);
+    }
+    .skill-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .skill-row:hover .skill-cat { color: var(--fg); transform: translateX(4px); }
+    
+    .skill-cat { 
+      font-size: 0.85rem; 
+      font-weight: 700; 
+      text-transform: uppercase; 
+      letter-spacing: 0.08em; 
+      color: var(--brand-accent); 
+      width: 200px; 
+      flex-shrink: 0; 
+      display: flex; 
+      align-items: center; 
+      gap: 0.6rem; 
+      transition: all 0.4s var(--smooth);
+      will-change: transform;
+    }
+    
+    .skill-text-list {
+      flex: 1;
+      font-size: 0.92rem;
+      color: var(--fg);
+      font-weight: 500;
+      line-height: 1.6;
+      transition: color 0.4s ease;
+    }
+    .skill-text-list .dot-sep {
+      color: var(--muted);
+      margin: 0 0.5rem;
+      font-weight: 700;
+      opacity: 0.5;
+    }
+
+    @media (max-width: 680px) {
+      .skill-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 1rem 0; }
+      .skill-cat { width: 100%; }
+    }
+
+    .xp-item { position: relative; padding-left: 1.75rem; margin-bottom: 2rem; border-left: 2px solid var(--card-border); transition: border-color 0.4s ease; }
+    .xp-item:last-child { margin-bottom: 0; }
+    .xp-item::before { 
+      content: ''; position: absolute; left: -6px; top: 0.4rem; width: 10px; height: 10px; 
+      border-radius: 50%; background: var(--bg); border: 2px solid var(--timeline-dot); 
+      box-shadow: 0 0 10px var(--glow); transition: all 0.4s var(--smooth);
+    }
+    .xp-item:hover::before { background: var(--timeline-dot); transform: scale(1.3); }
+    
+    .xp-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .xp-role { font-weight: 700; font-size: 1.05rem; color: var(--fg); letter-spacing: -0.01em; transition: color 0.4s ease; }
+    .xp-org { color: var(--brand-accent); font-weight: 600; font-size: 0.95rem; transition: color 0.4s ease; }
+    .xp-date { font-weight: 600; color: var(--muted); font-size: 0.8rem; background: var(--skill-bg); padding: 0.2rem 0.6rem; border-radius: 6px; border: 1px solid var(--card-border); transition: all 0.4s ease; }
+    
+    .xp-list { list-style: none; padding-left: 0; margin: 0 0 0.75rem 0; }
+    .xp-list li { position: relative; padding-left: 1.2rem; color: var(--muted); font-size: 0.9rem; margin-bottom: 0.35rem; line-height: 1.6; transition: color 0.4s ease; }
+    .xp-list li::before { content: "›"; position: absolute; left: 0; top: -1px; color: var(--brand-accent); font-weight: 700; font-size: 1.2rem; transition: color 0.4s ease; }
+
+    .tech-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+    .tech-stack span { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 6px; background: rgba(59, 130, 246, 0.08); color: var(--brand-accent); border: 1px solid rgba(59, 130, 246, 0.15); transition: all 0.3s var(--smooth); }
+    .tech-stack span:hover { background: rgba(59, 130, 246, 0.15); transform: translateY(-1px); }
+
+    .cert-box { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .cert-left { display: flex; align-items: center; gap: 1rem; }
+    .cert-icon { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(37, 99, 235, 0.2)); color: var(--brand-accent); font-size: 1.2rem; flex-shrink: 0; border: 1px solid rgba(56, 189, 248, 0.2); transition: all 0.4s ease; }
+
+    footer { text-align: center; padding: 3rem 0 2rem; color: var(--muted); font-size: 0.85rem; transition: color 0.4s ease; }
+    
+    .theme-toggle { position: fixed; top: 1.25rem; right: 1.25rem; z-index: 1202; width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--card-border); background: var(--card); backdrop-filter: blur(10px); color: var(--fg); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.4s var(--smooth); box-shadow: 0 4px 12px rgba(0,0,0,0.1); will-change: transform; }
+    .theme-toggle:hover { transform: scale(1.1) rotate(10deg); border-color: var(--brand-accent); color: var(--brand-accent); box-shadow: 0 8px 24px var(--glow); }
+    
+    section { scroll-margin-top: 100px; }
+
+    @media print {
+      #spiderWeb, .theme-toggle, .page-nav-wrap, footer, .hero-glow { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .card, .animate-up { opacity: 1 !important; transform: none !important; animation: none !important; }
+      .card { border: 1px solid #ddd !important; box-shadow: none !important; background: #fff !important; backdrop-filter: none !important; }
+      .container { max-width: 100% !important; padding: 0 !important; }
+      .chip.download { display: none !important; }
+      .xp-date { border: none !important; }
     }
   </style>
 </head>
-<body class="dark-mode"> <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><i id="themeIcon" class="fa-solid fa-sun"></i></button> <div class="container py-4">
-    <header class="site-header">
-      <h1 class="name">
-        <span class="initial">U</span><span class="rest">ZAIR</span>
-        &nbsp;
-        <span class="initial">M</span><span class="rest">EHMOOD</span>
-      </h1>
-      <p class="title text-uppercase">Data Scientist</p> <nav class="contact mt-3" aria-label="contact links">
+<body class="dark-mode">
+  
+  <div class="hero-glow animate-up"></div>
+  <canvas id="spiderWeb"></canvas>
+  <button id="themeToggle" class="theme-toggle animate-up"><i id="themeIcon" class="fa-solid fa-sun"></i></button>
+  
+  <div class="container">
+    <header class="site-header animate-up">
+      <h1 class="name">Uzair Mehmood</h1>
+      <div class="title">IT Support & Systems Engineer</div>
+      
+      <nav class="contact" aria-label="contact links">
         <a class="chip" target="_blank" href="https://www.linkedin.com/in/iamuzairmehmood"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         <a class="chip" target="_blank" href="https://wa.me/+923110240059"><i class="fa-solid fa-phone"></i> +92 311-0240059</a>
         <a class="chip" href="mailto:ch_uzairmehmood@outlook.com"><i class="fa-solid fa-envelope"></i> Email</a>
         <a class="chip" target="_blank" href="https://github.com/iamuzairmehmood"><i class="fa-brands fa-github"></i> GitHub</a>
-        <button class="chip download" id="btnDownload"><i class="fa-solid fa-file-arrow-down"></i> Download PDF</button>
+        <a class="chip" target="_blank" href="https://iamuzairmehmood.github.io/"><i class="fa-solid fa-globe"></i> Website</a>
+        <button class="chip download" onclick="window.print()"><i class="fa-solid fa-file-arrow-down"></i> Resume PDF</button>
       </nav>
     </header>
 
-    <div class="page-nav-wrap">
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
-      <nav class="page-nav" role="navigation" aria-label="Page sections">
-        <a href="#career-summary" class="nav-link">Career Summary</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#training" class="nav-link">Training</a>
-        <a href="#certification" class="nav-link">Certification</a>
-        <a href="#education" class="nav-link">Education</a>
+    <div class="page-nav-wrap animate-up delay-1">
+      <nav class="page-nav" role="navigation">
+        <a href="#summary" class="active">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
       </nav>
     </div>
 
-    <section id="career-summary" class="reveal">
-      <h3 class="section-title">Career Summary</h3>
-      <div class="card">
-        <p>IBM Certified Data Scientist with hands-on experience in Python (Pandas, NumPy, Matplotlib), SQL, Excel, and Power BI, with expertise in data preprocessing, cleaning, transformation, and exploratory data analysis (EDA). Skilled in building predictive models, performing statistical analysis, and creating interactive dashboards to deliver actionable insights. Experienced in web scraping, data visualization, and business intelligence reporting to support data-driven decision-making.</p>
-        <p class="mb-0"><strong>Interests:</strong> Data Engineering, Data Analysis, Data Science and Artificial Intelligence.</p>
-      </div>
-    </section>
-
-    <section id="skills" class="reveal">
-      <h3 class="section-title">Skills</h3>
-      <div class="card">
-        <ul class="mb-0 skills">
-          <li><strong>Languages:</strong> Python | SQL</li>
-          <li><strong>Libraries:</strong> Pandas | Numpy | Matplotlib | Plotly | Beautiful Soup | Selenium | Playwright</li>
-          <li><strong>Tools:</strong> Excel | Power BI | Jupyter Notebook | VS Code | IBM Cognos | Microsoft SQL Server | Git</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="experience" class="reveal">
-        <h3 class="section-title">Experience</h3>
-        <div class="card">
-          <div class="xp-item">
-            <div class="xp-head">
-              <div class="xp-left">
-                <div class="xp-role">Junior Data Scraper</div>
-                <div class="xp-org">Mesh Sq</div>
-              </div>
-              <div class="xp-date">Dec 2025 - Mar 2026</div>
-            </div>
-            <ul>
-              <li>Engineered scalable end-to-end lead generation using Python-based web scraping and browser automation, delivering 70,000+ leads.</li>
-              <li>Build automated ETL data pipelines for extraction, cleaning, validation, and structured transformation.</li>
-              <li><strong>Tech Stack: Python | Playwright | Selenium | Beautiful Soup | Pandas | Automation | Data Pipelines | ETL</strong></li>
-            </ul>
-          </div>
-
-          <div class="xp-item">
-            <div class="xp-head">
-              <div class="xp-left">
-                <div class="xp-role">Assistant System Engineer</div>
-                <div class="xp-org">AI Mustafa Trust</div>
-              </div>
-              <div class="xp-date">Aug 2025 - Dec 2025</div>
-            </div>
-            <ul>
-              <li>Guaranteed data accuracy within the healthcare ERP system through rigorous validation checks.</li>
-              <li>Enabled reliable reporting and informed decision-making by ensuring high-quality, clean data.</li>
-              <li><strong>Tech Stack: Healthcare ERP | ERP Support | Data Validation | System Support</strong></li>
-            </ul>
-          </div>
+    <section id="summary" class="animate-up delay-2">
+      <div class="section-title"><i class="fa-solid fa-user-gear"></i> Professional Profile</div>
+      <div class="card tracking-card">
+        <p style="color: var(--muted); margin-bottom: 1rem; transition: color 0.4s ease;">
+          Software Engineering graduate with hands-on experience in IT support, system administration, network troubleshooting, and enterprise application support. Experienced in resolving hardware, software, and connectivity issues, monitoring system and network performance, supporting business-critical applications, and maintaining reliable IT operations.
+        </p>
+        <div style="font-size: 0.9rem; color: var(--fg); background: var(--skill-bg); padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid var(--card-border); transition: all 0.4s ease;">
+          <strong style="color: var(--brand-accent); transition: color 0.4s ease;">Focus Areas:</strong> IT Support <span style="color:var(--muted)">•</span> Network & Infrastructure <span style="color:var(--muted)">•</span> System Administration
         </div>
+      </div>
     </section>
 
-    <section id="projects" class="reveal">
-      <h3 class="section-title">Projects</h3>
-      <div class="card proj">
+    <section id="skills" class="animate-up delay-3">
+      <div class="section-title"><i class="fa-solid fa-layer-group"></i> Technical Competencies</div>
+      <div class="card tracking-card">
+        <div class="skills-horizontal">
+          
+          <div class="skill-row">
+            <div class="skill-cat"><i class="fa-solid fa-headset"></i> IT Support & Ops</div>
+            <div class="skill-text-list">
+              IT Support <span class="dot-sep">•</span> Technical Troubleshooting <span class="dot-sep">•</span> System Administration <span class="dot-sep">•</span> Application Support <span class="dot-sep">•</span> Hardware & Software Support
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-cat"><i class="fa-solid fa-network-wired"></i> Networking</div>
+            <div class="skill-text-list">
+              TCP/IP <span class="dot-sep">•</span> LAN/WAN <span class="dot-sep">•</span> DNS <span class="dot-sep">•</span> DHCP <span class="dot-sep">•</span> Network Troubleshooting <span class="dot-sep">•</span> Connectivity Monitoring <span class="dot-sep">•</span> Network Infrastructure
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-cat"><i class="fa-solid fa-sliders"></i> Systems & Tools</div>
+            <div class="skill-text-list">
+              Windows <span class="dot-sep">•</span> Linux <span class="dot-sep">•</span> Active Directory <span class="dot-sep">•</span> PRTG <span class="dot-sep">•</span> NTOP <span class="dot-sep">•</span> UniFi OS <span class="dot-sep">•</span> AD Manager Plus <span class="dot-sep">•</span> Ticketing Systems
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-cat"><i class="fa-solid fa-server"></i> Enterprise Apps</div>
+            <div class="skill-text-list">
+              ERP Support <span class="dot-sep">•</span> Vtrade <span class="dot-sep">•</span> KITS <span class="dot-sep">•</span> Application Troubleshooting <span class="dot-sep">•</span> Data Validation <span class="dot-sep">•</span> Backup & Recovery
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="animate-up delay-4">
+      <div class="section-title"><i class="fa-solid fa-briefcase"></i> Work History</div>
+      <div class="card tracking-card">
         
-        <div class="row-item">
-            <div class="left">
-                <div class="d-flex align-items-center flex-wrap">
-                    <h5 class="mb-0">Credit Card Fraud Risk Analysis</h5>
-                    <a href="https://github.com/IAMUZAIRMEHMOOD/Projects-IBM-Data-Analyst-Professional-Certificate-2025/tree/main/Power%20BI-Project-1-Credit-Card-Fraud-Risk%20Analysis" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
-                </div>
-                <div class="mt-2 mb-2">
-                    <span class="badge badge-powerbi">Power BI</span>
-                </div>
-                <ul>
-                    <li>Designed an interactive Power BI dashboard for Credit Card Fraud Risk Analysis to monitor fraud rate, risk levels, and transaction trends.</li>
-                    <li><strong>Tech Stack: Power BI, DAX, Slicers, KPIs and Interactive Visuals.</strong></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row-item">
-            <div class="left">
-                <div class="d-flex align-items-center flex-wrap">
-                    <h5 class="mb-0">Retail Sales Dashboard</h5>
-                    <a href="https://github.com/IAMUZAIRMEHMOOD/Projects-IBM-Data-Analyst-Professional-Certificate-2025/tree/main/MS%20Excel-Project-3-Retail-Sales-Dashboard" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
-                </div>
-                <div class="mt-2 mb-2">
-                    <span class="badge badge-excel">Microsoft Excel</span>
-                </div>
-                <ul>
-                    <li>Created an interactive dashboard to analyze KPI's, sales pattern and customer behavior for clearer business insights.</li>
-                    <li><strong>Tech Stack: MS Excel, Power Query, Power Pivot, DAX Measures, Data Modeling, Pivot Table, Pivot Chart, Slicers.</strong></li>
-                </ul>
-            </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="training" class="reveal">
-      <h3 class="section-title">Training</h3>
-      <div class="card">
         <div class="xp-item">
           <div class="xp-head">
-            <div class="xp-left">
-              <div class="xp-role">Artificial Intelligence</div>
-              <div class="xp-org">Samsung Innovation Campus 2026</div>
-            </div>
-            <div class="xp-date">Jan 2026 - Feb 2026</div>
+            <div><span class="xp-role">IT Assistant</span> <span class="xp-org">• Fawad Yousuf Securities Limited</span></div>
+            <div class="xp-date">Aug 2026 - Present</div>
           </div>
-          <ul>
-            <li>Mastered Python (NumPy, Pandas), Linear Algebra, and Statistics to perform data preprocessing, exploratory data analysis, and visualization.</li>
-            <!-- <li>Developing Supervised, Unsupervised, and Deep Learning models using TensorFlow and Keras for real-world problem solving.</li> -->
+          <ul class="xp-list">
+            <li>Provide IT and system support, resolving client queries and troubleshooting software and connectivity issues.</li>
+            <li>Operate and support VTrade and KITS stock-trading software, ensuring connectivity and application availability.</li>
+            <li>Perform regular backups of business-critical data and software systems to support data protection and operational continuity.</li>
           </ul>
+          <div class="tech-stack"><span>VTrade</span><span>KITS</span><span>Windows</span><span>Networking</span><span>System Support</span><span>Backup & Recovery</span></div>
         </div>
 
         <div class="xp-item">
           <div class="xp-head">
-            <div class="xp-left">
-              <div class="xp-role">Data Analyst Trainee (IBM-Aligned Curriculum)</div>
-              <div class="xp-org">EXD - Blended International IT Training Program</div>
-            </div>
-            <div class="xp-date">Sep 2025 - Nov 2025</div>
+            <div><span class="xp-role">Assistant System Engineer</span> <span class="xp-org">• Al Mustafa Trust</span></div>
+            <div class="xp-date">Aug 2025 - Dec 2025</div>
           </div>
-          <ul>
-            <li>Trained in SQL, Python, Excel and Power BI to build code data analysis and reporting skills.</li>
-            <li>Gained hands-on experience in data cleaning, visualization and analytical problem-solving.</li>
+          <ul class="xp-list">
+            <li>Supported healthcare ERP operations by performing data validation and resolving data-related issues to maintain accurate reporting.</li>
+            <li>Provided first-level technical support to end-users, resolving hardware, software and network issues.</li>
           </ul>
+          <div class="tech-stack"><span>Healthcare ERP</span><span>ERP Support</span><span>Data Validation</span><span>Troubleshooting</span><span>System Support</span></div>
         </div>
+
+        <div class="xp-item">
+          <div class="xp-head">
+            <div><span class="xp-role">System Support Engineer</span> <span class="xp-org">• Sybrid Private Limited</span></div>
+            <div class="xp-date">Jun 2022 - Sep 2022</div>
+          </div>
+          <ul class="xp-list">
+            <li>Provided first-level technical support to end-users, resolving hardware, software, and network issues, improving resolution time by 20%.</li>
+            <li>Configured and supported dialer systems and Microsoft Outlook, including email account setup and connectivity troubleshooting.</li>
+            <li>Monitored and maintained system health and network connectivity to ensure seamless IT operations.</li>
+            <li>Utilized PRTG, NTOP, UniFi OS, AD Manager Plus, and a Ticketing System to ensure seamless operations and security.</li>
+          </ul>
+          <div class="tech-stack"><span>PRTG</span><span>NTOP</span><span>UniFi OS</span><span>Microsoft Outlook</span><span>AD Manager Plus</span><span>Ticketing System</span></div>
+        </div>
+
       </div>
     </section>
 
-    <section id="certification" class="reveal">
-      <h3 class="section-title">Certification</h3>
-      <div class="card">
-        <div class="cert-premium">
-          <div class="cert-info">
-            <div class="cert-icon">
-              <i class="fa-solid fa-certificate"></i>
-            </div>
-            <div class="cert-details">
-              <div class="cert-name">IBM Data Analyst Professional Certificate via Coursera</div>
-              <div class="cert-issuer">IBM</div>
+    <section id="education" class="animate-up delay-4">
+      <div class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+      <div class="card tracking-card">
+        <div class="cert-box">
+          <div class="cert-left">
+            <div class="cert-icon"><i class="fa-solid fa-university"></i></div>
+            <div>
+              <div style="font-weight: 700; font-size: 1rem; color: var(--fg); transition: color 0.4s ease;">Bachelor Of Software Engineering</div>
+              <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; transition: color 0.4s ease;">Bahria University — 2023</div>
+              <div style="font-size: 0.8rem; color: var(--brand-accent); margin-top: 0.25rem; transition: color 0.4s ease;">Courses: Computer Networks, Information Security, Operating Systems (CGPA: 3.07)</div>
             </div>
           </div>
-          <a href="https://www.coursera.org/account/accomplishments/specialization/BI23JTG5FAGH" target="_blank" class="verify-btn">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Credentials
-          </a>
         </div>
       </div>
     </section>
 
-    <section id="education" class="reveal">
-      <h3 class="section-title">Education</h3>
-      <div class="card">
-        <div class="edu-single-line">
-          <div class="degree">Bachelor of Software Engineering</div>
-          <div class="university">Bahria University</div>
-          <div class="xp-date">Graduated 2023</div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p class="mb-0">© 2025 Uzair Mehmood. All rights reserved. Designed with <span class="heart">❤</span></p>
+    <footer class="animate-up delay-4">
+      <p>© 2026 Uzair Mehmood • Built with Precision</p>
     </footer>
-
-  </div>
-
-  <button class="scroll-up" id="scrollUp" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
-
-  <div id="loader">
-    <div class="card p-3 text-center">
-      <div class="mb-2"><i class="fa-solid fa-file-arrow-down fa-2x"></i></div>
-      <div class="spinner-border" role="status" aria-hidden="true"></div>
-      <p class="mt-3 mb-0">Preparing download…</p>
-    </div>
   </div>
 
   <script>
-    // Theme Logic - Initialization and persistence
     const themeIcon = document.getElementById('themeIcon');
-    
-    // Set Dark Mode as the robust default if no preference is saved in localStorage.
-    (function(){ 
-        let saved = localStorage.getItem('theme'); 
-        
-        // If no preference is saved, default to 'dark' and save it.
-        if (saved === null) {
-            saved = 'dark';
-            localStorage.setItem('theme', saved);
+    if(!localStorage.getItem('theme')) localStorage.setItem('theme', 'dark');
+    if(localStorage.getItem('theme') === 'light') { document.body.classList.add('light-mode'); themeIcon.className = 'fa-solid fa-moon'; }
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      const isLight = document.body.classList.contains('light-mode');
+      
+      themeIcon.style.transform = "rotate(180deg) scale(0)";
+      setTimeout(() => {
+        themeIcon.className = isLight ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+        themeIcon.style.transform = "rotate(0deg) scale(1)";
+      }, 150);
+      
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+    themeIcon.style.transition = "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)";
+
+    let frameRequested = false;
+    document.querySelectorAll('.tracking-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        if (!frameRequested) {
+          window.requestAnimationFrame(() => {
+            const rect = card.getBoundingClientRect();
+            card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+            card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+            frameRequested = false;
+          });
+          frameRequested = true;
         }
-
-        if(saved === 'dark'){ 
-            document.body.classList.add('dark-mode'); 
-            if(themeIcon) { themeIcon.classList.remove('fa-moon'); themeIcon.classList.add('fa-sun'); } 
-        } else if (saved === 'light') { 
-            document.body.classList.remove('dark-mode'); 
-            if(themeIcon) { themeIcon.classList.add('fa-moon'); themeIcon.classList.remove('fa-sun'); } 
-        } 
-    })();
-
-
-    window.addEventListener('load', () => {
-      window.scrollTo({top:0});
-      const navLinks = document.querySelectorAll('.page-nav a');
-      navLinks.forEach(a => a.classList.remove('active'));
-      const obj = document.querySelector('.page-nav a[href="#career-summary"]');
-      if(obj) obj.classList.add('active');
+      });
     });
-
-    const themeToggle = document.getElementById('themeToggle');
-    themeToggle && themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      themeIcon.classList.toggle('fa-moon');
-      themeIcon.classList.toggle('fa-sun');
-      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-    });
-
-
-    // Scroll Logic
-    const up = document.getElementById('scrollUp');
-    window.addEventListener('scroll', ()=>{ up.style.display = window.scrollY > 300 ? 'flex' : 'none'; });
-    up.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
-
-    // Observer Logic
-    const revealEls = document.querySelectorAll('.reveal');
-    const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } }) }, {threshold:0.12});
-    revealEls.forEach(el=>io.observe(el));
 
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.page-nav a');
-    const nav = document.querySelector('.page-nav');
     
-    // Improved section observer
-    const observerOptions = { 
-      root: null, 
-      rootMargin: '0px 0px -70% 0px',
-      threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1] 
-    };
-    
-    const sectionObserver = new IntersectionObserver((entries) => {
-        let maxVisibleSection = null;
-        let maxRatio = 0;
-        
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > maxRatio) {
-                maxRatio = entry.intersectionRatio;
-                maxVisibleSection = entry.target.id;
-            }
-        });
-        
-        if (maxVisibleSection && maxRatio > 0.3) {
-            navLinks.forEach(link => link.classList.remove('active'));
-            const link = document.querySelector(`.page-nav a[href="#${maxVisibleSection}"]`);
-            if (link) link.classList.add('active');
-        }
-    }, observerOptions);
-    
-    sections.forEach(s => sectionObserver.observe(s));
-
-    // Nav Styles
-    const pageNavWrap = document.querySelector('.page-nav-wrap');
     window.addEventListener('scroll', () => {
-      const navTopOffset = pageNavWrap.getBoundingClientRect().top + window.scrollY;
-      if (window.scrollY >= navTopOffset) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+      let current = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 150;
+        if (window.scrollY >= top) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+      });
     });
 
-    const navToggle = document.getElementById('navToggle');
-    navToggle && navToggle.addEventListener('click', () => {
-      const opened = nav.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', opened);
-      navToggle.innerHTML = opened ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-      if(opened){ nav.style.maxHeight = '420px'; } else { nav.style.maxHeight = null; }
-    });
-    document.querySelectorAll('.page-nav a').forEach(a=>a.addEventListener('click', ()=>{ if(window.innerWidth<=768) { nav.classList.remove('open'); nav.style.maxHeight = null; navToggle.setAttribute('aria-expanded', 'false'); navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>'; } }));
+    const canvas = document.getElementById('spiderWeb');
+    const ctx = canvas.getContext('2d');
+    let width, height, particles = [];
+    const mouse = { x: -1000, y: -1000, radiusSq: 250 * 250 }; 
 
-    // Download Logic
-    const loader = document.getElementById('loader');
-    const btnDownload = document.getElementById('btnDownload');
-    const downloadLink = 'https://iamuzairmehmood.github.io/Resume-Uzair%20Mehmood.pdf';
-    btnDownload && btnDownload.addEventListener('click', ()=>{
-      loader.style.display = 'flex';
-      setTimeout(()=>{ loader.style.display = 'none'; window.open(downloadLink, '_blank'); }, 1000);
-    });
+    let targetMouseX = -1000, targetMouseY = -1000;
     
-    // Improved scroll tracking
-    let lastScrollTop = 0;
-    window.addEventListener('scroll', function() {
-      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScroll > lastScrollTop) {
-        // Scrolling down
-      } else {
-        // Scrolling up - more precise section detection
-        const currentSection = Array.from(sections).find(section => {
-          const rect = section.getBoundingClientRect();
-          return rect.top <= 120 && rect.bottom >= 120;
-        });
+    window.addEventListener('mousemove', e => { 
+      targetMouseX = e.clientX; 
+      targetMouseY = e.clientY; 
+    });
+    window.addEventListener('mouseout', () => { 
+      targetMouseX = -1000; 
+      targetMouseY = -1000; 
+    });
+    window.addEventListener('resize', initCanvas);
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.size = Math.random() * 2 + 0.8;
+        this.baseVx = (Math.random() - 0.5) * 1.0;
+        this.baseVy = (Math.random() - 0.5) * 1.0;
+        this.vx = this.baseVx;
+        this.vy = this.baseVy;
+      }
+      update() {
+        this.vx += (this.baseVx - this.vx) * 0.08;
+        this.vy += (this.baseVy - this.vy) * 0.08;
         
-        if (currentSection) {
-          navLinks.forEach(link => link.classList.remove('active'));
-          const link = document.querySelector(`.page-nav a[href="#${currentSection.id}"]`);
-          if (link) link.classList.add('active');
+        this.x += this.vx; 
+        this.y += this.vy;
+
+        if (this.x < -50) this.x = width + 50;
+        if (this.x > width + 50) this.x = -50;
+        if (this.y < -50) this.y = height + 50;
+        if (this.y > height + 50) this.y = -50;
+
+        let dx = mouse.x - this.x, dy = mouse.y - this.y;
+        let distSq = dx * dx + dy * dy;
+        
+        if (distSq < mouse.radiusSq) {
+          let dist = Math.sqrt(distSq);
+          let force = (250 - dist) / 250;
+          this.vx -= (dx / dist) * force * 0.6; 
+          this.vy -= (dy / dist) * force * 0.6;
         }
       }
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    }, false);
+      draw(rgb) {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${rgb}, 0.7)`;
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = `rgba(${rgb}, 0.4)`;
+        ctx.fill();
+      }
+    }
+
+    function initCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      particles = [];
+      let count = Math.min(Math.floor((width * height) / 12000), 70);
+      for (let i = 0; i < count; i++) particles.push(new Particle());
+    }
+
+    const connectDistSq = 160 * 160;
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      let rgb = getComputedStyle(document.body).getPropertyValue('--web-rgb').trim();
+      
+      mouse.x += (targetMouseX - mouse.x) * 0.1;
+      mouse.y += (targetMouseY - mouse.y) * 0.1;
+      
+      const len = particles.length;
+      for (let i = 0; i < len; i++) {
+        particles[i].update();
+        particles[i].draw(rgb);
+
+        for (let j = i + 1; j < len; j++) {
+          let dx = particles[i].x - particles[j].x;
+          let dy = particles[i].y - particles[j].y;
+          let distSq = dx * dx + dy * dy;
+
+          if (distSq < connectDistSq) {
+            let alpha = 0.4 - (distSq / connectDistSq) * 0.4;
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(${rgb}, ${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+
+        let mdx = particles[i].x - mouse.x;
+        let mdy = particles[i].y - mouse.y;
+        let mdistSq = mdx * mdx + mdy * mdy;
+        if (mdistSq < mouse.radiusSq) {
+          let malpha = 0.5 - (mdistSq / mouse.radiusSq) * 0.5;
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(${rgb}, ${malpha})`;
+          ctx.lineWidth = 1.2;
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.stroke();
+        }
+      }
+      requestAnimationFrame(animate);
+    }
+
+    initCanvas();
+    animate();
   </script>
 </body>
 </html>
